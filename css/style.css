@@ -306,4 +306,181 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+img {
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover; /* contain */
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+/* space-grotesk-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/space-grotesk-v15-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-grotesk-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/space-grotesk-v15-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.header {
+  background-color: #151515;
+  background-image: url(/images/herader\ svg.svg);
+  background-repeat: no-repeat;
+  background-position: left 17rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  z-index: 100;
+  position: relative;
+}
+
+.header-items {
+  background-image: url(/images/Oval.svg);
+  background-repeat: no-repeat;
+  background-position: right 45rem top 50rem;
+}
+
+.hero-logo h1 {
+  color: #FFFFFF;
+}
+
+.header-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 100;
+}
+.header-title h1 {
+  font-weight: 700;
+  font-size: 8.8rem;
+  color: #FFFFFF;
+  margin-top: 15.8rem;
+  z-index: 100;
+}
+.header-title p {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #d9d9d9;
+  max-width: 44.5rem;
+  margin-bottom: 50px;
+  line-height: 2.8rem;
+}
+
+.header-title-span {
+  content: "";
+  border-bottom: 7px solid #4EE1A0;
+  width: 49rem;
+  margin-left: 170px;
+  margin-bottom: 50px;
+  transform: translateY(-10px);
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+  width: 12rem;
+  height: 4rem;
+  background: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  border-bottom: 2px solid #4EE1A0;
+  list-style: none;
+  letter-spacing: 2.2px;
+}
+
+.header-img {
+  width: 44.5rem;
+  height: 70rem;
+  background-image: url(/images/img/header-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 80px;
+}
+
+@media (max-width: 1000px) {
+  .header-img {
+    right: 0px;
+  }
+  .header-title h1 {
+    font-size: 7rem;
+  }
+  .header-title-span {
+    width: 35rem;
+  }
+  .header-items {
+    background-position: right 38rem top 50rem;
+  }
+}
+main {
+  flex-grow: 1;
 }/*# sourceMappingURL=style.css.map */
